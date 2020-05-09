@@ -39,10 +39,12 @@ class Solution {
 //        return new int[]{0};
 
         //A better solution: using hashmap, pushing values inside it and for each value checking if the number already exists in the hashmap.
+//        Runtime: 1 ms, faster than 99.93% of Java online submissions for Two Sum.
+//        Memory Usage: 39.4 MB, less than 5.65% of Java online submissions for Two Sum.
         HashMap<Integer, Integer> hm = new HashMap<>();
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             int tester = target - nums[i];
-            if(hm.containsKey(tester)) {
+            if (hm.containsKey(tester)) {
                 return new int[]{hm.get(tester), i};
             }
             hm.put(nums[i], i);
