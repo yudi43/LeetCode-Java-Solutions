@@ -22,11 +22,11 @@ return [0, 1].
 class Solution {
     public int[] twoSum(int[] nums, int target) {
 
-        //slower solution: for each element check if the total of (target - thatItem) has appeard before in the array, for that we use another while loop inside the for loop.
-        //using two loops makes it a O(n^2) complexity solution.
+//slower solution: for each element check if the total of (target - thatItem) has appeard before in the array, for that we use another while loop inside the for loop.
+//using two loops makes it a O(n^2) complexity solution.
 
-        //Runtime: 21 ms, faster than 40.50% of Java online submissions for Two Sum.
-        //Memory Usage: 39.6 MB, less than 5.65% of Java online submissions for Two Sum.
+//Runtime: 21 ms, faster than 40.50% of Java online submissions for Two Sum.
+//Memory Usage: 39.6 MB, less than 5.65% of Java online submissions for Two Sum.
 
 //        for(int i = 1; i < nums.length; i++) {
 //            int tester = target - nums[i];
@@ -38,7 +38,7 @@ class Solution {
 //        }
 //        return new int[]{0};
 
-        //A better solution: using hashmap, pushing values inside it and for each value checking if the number already exists in the hashmap.
+//A better solution: using hashmap, pushing values inside it and for each value checking if the number already exists in the hashmap.
 //        Runtime: 1 ms, faster than 99.93% of Java online submissions for Two Sum.
 //        Memory Usage: 39.4 MB, less than 5.65% of Java online submissions for Two Sum.
         HashMap<Integer, Integer> hm = new HashMap<>();
