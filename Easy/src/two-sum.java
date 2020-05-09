@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 /**
  * @author Yudhishthir Singh. Bangalore. 2020
  */
@@ -36,7 +38,15 @@ class Solution {
 //        }
 //        return new int[]{0};
 
-
-
+        //A better solution: using hashmap, pushing values inside it and for each value checking if the number already exists in the hashmap.
+        HashMap<Integer, Integer> hm = new HashMap<>();
+        for(int i = 0; i < nums.length; i++) {
+            int tester = target - nums[i];
+            if(hm.containsKey(tester)) {
+                return new int[]{hm.get(tester), i};
+            }
+            hm.put(nums[i], i);
+        }
+        return new int[]{0};
     }
 }
