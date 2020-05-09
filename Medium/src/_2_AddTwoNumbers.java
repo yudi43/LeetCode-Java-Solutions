@@ -23,6 +23,9 @@ public class _2_AddTwoNumbers {
 //BRUTE FORCE/LESS EFFICIENT SOLUTION:
 //Approach: Take values from each linked list and store them in a string builder and store the addition of their reversed values in another string variable (result in this case).
 //Convert that string variable into an arraylist, reverse it and create another linked list with its values. Return the linked list.
+//    Runtime: 19 ms, faster than 5.36% of Java online submissions for Add Two Numbers.
+//    Memory Usage: 40.3 MB, less than 99.06% of Java online submissions for Add Two Numbers.
+
 //    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 //        StringBuilder sb1 = new StringBuilder();
 //        StringBuilder sb2 = new StringBuilder();
@@ -47,7 +50,6 @@ public class _2_AddTwoNumbers {
 //            head.next = new ListNode(Integer.parseInt(strarr.get(i)));
 //            head = head.next;
 //        }
-//
 //        return resultNode;
 //    }
 }
