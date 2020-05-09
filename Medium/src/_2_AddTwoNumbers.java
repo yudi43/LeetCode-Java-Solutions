@@ -59,6 +59,46 @@ public class _2_AddTwoNumbers {
         }
         return resultList.next;
 
+    ListNode resultList = new ListNode(0);
+    ListNode head = resultList;
+
+    boolean carry = false;
+        while(l1 != null || l1 != null) {
+        int sum = 0;
+        if(l1 == null) {
+            sum += l2.val;
+            l2 = l2.next;
+        }else if(l2 == null) {
+            sum += l1.val;
+            l1 = l1.next;
+        }else{
+            sum += l1.val + l2.val;
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+
+        if(carry) {
+            sum += 1;
+        }
+
+        if(sum > 9) {
+            carry = true;
+            sum = sum % 10;
+        }else{
+            carry = false;
+        }
+
+        head.next = new ListNode(sum);
+        head = head.next;
+    }
+
+        if(carry) {
+        head.val = head.val%10;
+        head.next = new ListNode(1);
+    }
+
+        return resultList.next;
+
 
 //BRUTE FORCE/LESS EFFICIENT SOLUTION:
 //Approach: Take values from each linked list and store them in a string builder and store the addition of their reversed values in another string variable (result in this case).
