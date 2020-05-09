@@ -22,6 +22,9 @@ public class _2_AddTwoNumbers {
 //Efficient solution:
 //Approach: There is no need to convert the linked lists and reverse them to add then get the value.
 //If you directly start adding the items as you go ahead in both the linked lists, what you get is the result.
+//    Runtime: 1 ms, faster than 100.00% of Java online submissions for Add Two Numbers.
+//    Memory Usage: 39.5 MB, less than 99.69% of Java online submissions for Add Two Numbers.
+
         ListNode resultList = new ListNode();
         ListNode head = resultList;
         boolean carry = false;
@@ -38,24 +41,21 @@ public class _2_AddTwoNumbers {
             l1 = l1.next;
             l2 = l2.next;
         }
-
         if(carry) {
             sum += 1;
         }
-
         if(sum > 9) {
             carry = true;
             sum = sum % 10;
         }else{
             carry = false;
         }
-        head.next = new ListNode(sum);
-        head = head.next;
+            head.next = new ListNode(sum);
+            head = head.next;
         }
-
-            if(carry) {
+        if(carry) {
             head.val = head.val % 10;
-            head.next = new ListNode(1);
+             head.next = new ListNode(1);
         }
         return resultList.next;
 
