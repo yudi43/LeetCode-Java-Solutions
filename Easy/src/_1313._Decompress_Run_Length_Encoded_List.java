@@ -30,7 +30,6 @@ At the end the concatenation [2] + [4,4,4] is [2,4,4,4].
 class Solution {
     public int[] decompressRLElist(int[] nums) {
         List<Integer> result = new ArrayList<>();
-
         for(int i = 0; i < nums.length; i += 2) {
             int freq = nums[i];
             int value = nums[i+1];
@@ -38,12 +37,10 @@ class Solution {
                 result.add(value);
             }
         }
-
         int[] resultArr = new int[result.size()];
         for(int i = 0; i < result.size(); i++) {
             resultArr[i] = result.get(i);
         }
-
         return resultArr;
     }
 }
