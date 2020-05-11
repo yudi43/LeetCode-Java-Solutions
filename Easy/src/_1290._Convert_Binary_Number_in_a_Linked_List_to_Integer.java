@@ -18,6 +18,9 @@
 /*
 *   Approach: Iterate through the linked list until you find null, while iterating keep appending the values to a string builder.
 *   After complete traversal, parse the binary into a decimal using the parseInt method of the Integer class with radix of 2
+*
+*   Analysis: Runtime: 0 ms, faster than 100% of Java online submissions for Convert Binary Number in a Linked List to Integer.
+    Memory Usage: 38.5 MB, less than 100.00% of Java online submissions for Convert Binary Number in a Linked List to Integer.
 * */
 
 /**
