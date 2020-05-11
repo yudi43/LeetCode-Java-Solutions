@@ -24,7 +24,7 @@
 
 
 //Approach: The problem can be solved using stacks, by pushing and popping characters based on if it 'L' or 'R'. A simpler and more readable
-//solution would be to keep a track if it balanced or not is by using counters.
+//solution would be to keep a track if it being balanced or not is by using counters.
 //Analysis: Runtime: 1 ms, faster than 18.35% of Java online submissions for Split a String in Balanced Strings.
 //Memory Usage: 38.6 MB, less than 100.00% of Java online submissions for Split a String in Balanced Strings.
 class Solution {
