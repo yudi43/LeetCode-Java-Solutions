@@ -43,6 +43,5 @@ class Solution {
             head = head.next;
         }
         return Integer.parseInt(sb.toString(), 2);
-
     }
 }
