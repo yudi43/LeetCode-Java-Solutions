@@ -28,6 +28,7 @@ Memory Usage: 39.6 MB, less than 93.75% of Java online submissions for Minimum D
  * }
  */
 class Solution {
+    //This solution is needed and the same solution as finding max height would not work because we are covering the cases where the root has only one child.
     public int minDepth(TreeNode root) {
         if(root == null) return 0;
         if(root.left == null && root.right == null) return 1;
